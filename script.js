@@ -1,54 +1,75 @@
 const menuItems = [
-    { name: "Veg Snacker Burger", price: 79, rating: 4.2, ratingCount: 120, description: "Delicious veggie patty with fresh lettuce and our special sauce", image: "https://www.botanicalkitchen.com/wp-content/uploads/2021/01/Salad-lettuce-radish-carrot.jpg", category: "burgers" },
-    { name: "Chicken Whopper", price: 129, rating: 4.5, ratingCount: 200, description: "Flame-grilled chicken patty topped with fresh veggies", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kuns3umpUgkJXY5z3eqKhbWJXHLmDgb4cw&s", category: "burgers" },
-    { name: "Paneer Royale", price: 159, rating: 4.3, ratingCount: 150, description: "Premium paneer patty with cheese and royal sauce", image: "https://picsum.photos/100?random=3", category: "burgers" },
-    { name: "Crispy Veg Wrap", price: 99, rating: 4.0, ratingCount: 80, description: "Crispy veg patty wrapped in a soft tortilla", image: "https://www.eatingwell.com/thmb/jMiblIMDYWDUQHnUOwX9lBpvVCc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5586373-8bdb7a6fc99444e7bedec0e89de5eba0.jpg", category: "menu" },
-    { name: "Chicken Tandoori Wrap", price: 119, rating: 4.4, ratingCount: 110, description: "Tandoori chicken wrapped with mint mayo", image: "https://static.toiimg.com/thumb/62194857.cms?imgsize=1146358&width=800&height=800", category: "menu" },
-    { name: "French Fries", price: 69, rating: 4.1, ratingCount: 90, description: "Crispy golden fries served hot", image: "https://www.shellyfoodspot.com/wp-content/uploads/2023/07/Veggie-strips-recipe--scaled.jpg", category: "menu" },
-    { name: "Veggie Strips", price: 89, rating: 3.9, ratingCount: 70, description: "Crunchy veggie strips with dipping sauce", image: "https://www.shellyfoodspot.com/wp-content/uploads/2023/07/Veggie-strips-recipe--scaled.jpg", category: "menu" },
-    { name: "Chicken Nuggets", price: 99, rating: 4.2, ratingCount: 130, description: "Juicy chicken nuggets, perfect for snacking", image: "https://cdn.urbanpiper.com/media/bizmedia/2023/01/17/Chicken_nuggets_1673962569.jpg", category: "menu" },
-    { name: "Chocolate Shake", price: 109, rating: 4.6, ratingCount: 180, description: "Rich and creamy chocolate milkshake", image: "https://thehomeintent.com/wp-content/uploads/2023/02/Chocolate-Milkshake-without-Ice-Cream-Healthy-Recipe-featured.jpg", category: "menu" },
-    { name: "Mango Smoothie", price: 119, rating: 4.3, ratingCount: 95, description: "Refreshing mango smoothie made with real fruit", image: "https://www.liveeatlearn.com/wp-content/uploads/2020/08/mango-smoothie-vert.jpg", category: "menu" },
-    { name: "Double Cheese Burger", price: 149, rating: 4.7, ratingCount: 220, description: "Double the cheese, double the flavor", image: "https://s7d1.scene7.com/is/image/mcdonalds/202201_3426-005_DoubleQuarterPounderwithCheese_832x472:nutrition-calculator-tile?resmode=sharp2", category: "burgers" },
-    { name: "Spicy Bean Burger", price: 109, rating: 4.0, ratingCount: 85, description: "Spicy bean patty for those who like it hot", image: "https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe.jpg", category: "burgers" },
-    { name: "Fish Fillet Burger", price: 139, rating: 4.1, ratingCount: 100, description: "Crispy fish fillet with tartar sauce", image: "https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe.jpg", category: "burgers" },
-    { name: "Veggie Salad", price: 129, rating: 4.2, ratingCount: 75, description: "Fresh mixed veggies with our house dressing", image: "https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe.jpg", category: "menu" },
-    { name: "Chicken Caesar Salad", price: 149, rating: 4.4, ratingCount: 110, description: "Classic Caesar salad with grilled chicken", image: "https://www.erinliveswhole.com/wp-content/uploads/2021/03/chicken-caesar-salad-6.jpg", category: "menu" },
-    { name: "Onion Rings", price: 79, rating: 4.0, ratingCount: 95, description: "Crispy battered onion rings", image: "https://kristineskitchenblog.com/wp-content/uploads/2022/03/crispy-air-fryer-onion-rings-recipe-0775.jpg", category: "menu" },
-    { name: "Chilli Cheese Fries", price: 99, rating: 4.3, ratingCount: 130, description: "Fries topped with chilli and melted cheese", image: "https://images.ctfassets.net/hhv516v5f7sj/1OjIcGeVKg5maT9j6dLt4r/9d5e392fad9efa33f0903e7dcb0e521f/chilicheesefries_1000x1000.jpg", category: "menu" },
-    { name: "Vanilla Ice Cream", price: 59, rating: 4.5, ratingCount: 150, description: "Creamy vanilla ice cream", image: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/34F77344-5BD2-47B8-9213-2932E58C75FA/Derivates/D64A6A85-3934-4C3C-8DD4-7D54A4CA5A4F.jpg", category: "menu" },
-    { name: "Chocolate Brownie", price: 89, rating: 4.8, ratingCount: 200, description: "Warm chocolate brownie with vanilla ice cream", image: "https://chocolatecoveredkatie.com/wp-content/uploads/2022/11/Vegan-Brownies.jpg", category: "menu" },
-    { name: "Lemon Iced Tea", price: 69, rating: 4.2, ratingCount: 90, description: "Refreshing lemon iced tea", image: "https://recipes.net/wp-content/uploads/2020/06/mint-and-lemon-iced-tea-recipes.jpg", category: "menu" },
+    // Burgers
+    { name: "Classic Cheeseburger", price: 129, rating: 4.5, ratingCount: 230, description: "Juicy beef patty with melted cheese, lettuce, and tomato", image: "https://example.com/classic_cheeseburger.jpg", category: "burgers" },
+    { name: "Veggie Delight Burger", price: 119, rating: 4.3, ratingCount: 180, description: "Plant-based patty with avocado, sprouts, and vegan mayo", image: "https://example.com/veggie_delight.jpg", category: "burgers" },
+    { name: "Spicy Chicken Burger", price: 139, rating: 4.6, ratingCount: 210, description: "Crispy chicken fillet with jalapeños and spicy sauce", image: "https://example.com/spicy_chicken_burger.jpg", category: "burgers" },
+
+    // Pizza
+    { name: "Margherita Pizza", price: 199, rating: 4.4, ratingCount: 190, description: "Classic pizza with tomato sauce, mozzarella, and basil", image: "https://example.com/margherita_pizza.jpg", category: "pizza" },
+    { name: "Pepperoni Supreme", price: 249, rating: 4.7, ratingCount: 220, description: "Loaded with pepperoni, bell peppers, and olives", image: "https://example.com/pepperoni_supreme.jpg", category: "pizza" },
+    { name: "Vegetarian Delight", price: 229, rating: 4.3, ratingCount: 170, description: "Assorted vegetables on a crispy thin crust", image: "https://example.com/vegetarian_pizza.jpg", category: "pizza" },
+
+    // Pasta
+    { name: "Spaghetti Carbonara", price: 179, rating: 4.6, ratingCount: 200, description: "Creamy pasta with bacon and parmesan cheese", image: "https://example.com/spaghetti_carbonara.jpg", category: "pasta" },
+    { name: "Penne Arrabbiata", price: 159, rating: 4.2, ratingCount: 150, description: "Spicy tomato sauce with garlic and red chili flakes", image: "https://example.com/penne_arrabbiata.jpg", category: "pasta" },
+    { name: "Fettuccine Alfredo", price: 189, rating: 4.5, ratingCount: 180, description: "Rich and creamy sauce with grilled chicken", image: "https://example.com/fettuccine_alfredo.jpg", category: "pasta" },
+
+    // Salads
+    { name: "Caesar Salad", price: 149, rating: 4.1, ratingCount: 130, description: "Crisp romaine lettuce with Caesar dressing and croutons", image: "https://example.com/caesar_salad.jpg", category: "salads" },
+    { name: "Greek Salad", price: 159, rating: 4.3, ratingCount: 140, description: "Fresh vegetables with feta cheese and olives", image: "https://example.com/greek_salad.jpg", category: "salads" },
+    { name: "Quinoa Power Bowl", price: 179, rating: 4.4, ratingCount: 120, description: "Nutrient-rich salad with quinoa, avocado, and mixed greens", image: "https://example.com/quinoa_bowl.jpg", category: "salads" },
+
+    // Desserts
+    { name: "Chocolate Brownie Sundae", price: 129, rating: 4.7, ratingCount: 170, description: "Warm chocolate brownie topped with vanilla ice cream and hot fudge", image: "https://example.com/brownie_sundae.jpg", category: "desserts" },
+    { name: "New York Cheesecake", price: 139, rating: 4.6, ratingCount: 160, description: "Creamy cheesecake with a graham cracker crust", image: "https://example.com/cheesecake.jpg", category: "desserts" },
+    { name: "Tiramisu", price: 149, rating: 4.5, ratingCount: 150, description: "Italian coffee-flavored dessert with layers of mascarpone", image: "https://example.com/tiramisu.jpg", category: "desserts" },
+
+    // Drinks
+    { name: "Fresh Lemonade", price: 69, rating: 4.2, ratingCount: 110, description: "Refreshing homemade lemonade with mint", image: "https://example.com/lemonade.jpg", category: "drinks" },
+    { name: "Iced Caramel Macchiato", price: 89, rating: 4.4, ratingCount: 130, description: "Espresso with milk and caramel syrup over ice", image: "https://example.com/iced_macchiato.jpg", category: "drinks" },
+    { name: "Mango Lassi", price: 79, rating: 4.5, ratingCount: 140, description: "Creamy yogurt-based drink with mango pulp", image: "https://example.com/mango_lassi.jpg", category: "drinks" },
 ];
 
 let cart = {};
+let lastScrollTop = 0;
+const nav = document.getElementById('category-nav');
+const navContainer = document.getElementById('nav-container');
+const navHeight = nav.offsetHeight;
 
-function renderMenuItems(category = 'recommended') {
+function renderMenuItems() {
     const menuContainer = document.getElementById('menu-items');
     menuContainer.innerHTML = '';
     
-    const itemsToRender = category === 'recommended' 
-        ? menuItems.slice(0, 5) 
-        : menuItems.filter(item => item.category === category);
-
-    itemsToRender.forEach(item => {
-        const menuItem = document.createElement('div');
-        menuItem.className = 'menu-item';
-        menuItem.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
-            <div class="menu-item-details">
-                <h3>${item.name}</h3>
-                <div>★${item.rating.toFixed(1)} (${item.ratingCount} ratings)</div>
-                <div>₹${item.price}</div>
-                <p>${item.description}</p>
-                <div class="quantity-control" data-name="${item.name}" data-price="${item.price}">
-                    <button class="quantity-btn minus">-</button>
-                    <span class="quantity">0</span>
-                    <button class="quantity-btn plus">+</button>
+    const categories = ['burgers', 'pizza', 'pasta', 'salads', 'desserts', 'drinks'];
+    
+    categories.forEach(category => {
+        const categorySection = document.createElement('section');
+        categorySection.id = category;
+        categorySection.innerHTML = `<h2>${category.toUpperCase()}</h2>`;
+        
+        const categoryItems = menuItems.filter(item => item.category === category);
+        
+        categoryItems.forEach(item => {
+            const menuItem = document.createElement('div');
+            menuItem.className = 'menu-item';
+            menuItem.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" loading="lazy">
+                <div class="menu-item-details">
+                    <h3>${item.name}</h3>
+                    <div>★${item.rating.toFixed(1)} (${item.ratingCount} ratings)</div>
+                    <div>₹${item.price}</div>
+                    <p>${item.description}</p>
+                    <div class="quantity-control" data-name="${item.name}" data-price="${item.price}">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">${cart[item.name]?.quantity || 0}</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
                 </div>
-            </div>
-        `;
-        menuContainer.appendChild(menuItem);
+            `;
+            categorySection.appendChild(menuItem);
+        });
+        
+        menuContainer.appendChild(categorySection);
     });
 }
 
@@ -61,6 +82,7 @@ function updateCart(name, price, change) {
         delete cart[name];
     }
     updateCartCount();
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function updateCartCount() {
@@ -80,7 +102,11 @@ function showCart() {
         const itemTotal = item.quantity * item.price;
         total += itemTotal;
         cartItems.innerHTML += `
-            <div>${name} x ${item.quantity} - ₹${itemTotal}</div>
+            <div class="cart-item">
+                <span>${name}</span>
+                <span>x ${item.quantity}</span>
+                <span>₹${itemTotal}</span>
+            </div>
         `;
     }
     
@@ -88,14 +114,54 @@ function showCart() {
     modal.style.display = 'block';
 }
 
+function fixNavOnScrollUp() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > navHeight) {
+        // Scrolling down
+        navContainer.classList.remove('fixed-nav');
+        document.body.classList.remove('nav-padding');
+    } else if (scrollTop < lastScrollTop) {
+        // Scrolling up
+        navContainer.classList.add('fixed-nav');
+        document.body.classList.add('nav-padding');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}
+
+function highlightNavButton() {
+    const sections = document.querySelectorAll('section');
+    const navButtons = document.querySelectorAll('nav button');
+    
+    let currentSectionId = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - window.innerHeight / 2) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+    
+    navButtons.forEach(button => {
+        if (button.dataset.category === currentSectionId) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    cart = JSON.parse(localStorage.getItem('cart')) || {};
+    updateCartCount();
     renderMenuItems();
 
     document.querySelectorAll('nav button').forEach(button => {
         button.addEventListener('click', (e) => {
-            document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            renderMenuItems(e.target.dataset.category);
+            const targetSection = document.getElementById(e.target.dataset.category);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
 
@@ -129,5 +195,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target == document.getElementById('cart-modal')) {
             document.getElementById('cart-modal').style.display = 'none';
         }
+    });
+
+    document.getElementById('checkout-btn').addEventListener('click', () => {
+        alert('Proceeding to checkout... (This is where you would implement the checkout process)');
+    });
+
+    window.addEventListener('scroll', () => {
+        fixNavOnScrollUp();
+        highlightNavButton();
     });
 });
