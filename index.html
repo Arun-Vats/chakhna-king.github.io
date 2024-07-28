@@ -6,25 +6,29 @@
     <title>Chakhna King Menu</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>CHAKHNA KING</h1>
-            <p class="tagline">Veg & Non-Veg</p>
+            <p class="tagline">Veg & Non-Veg Delights</p>
         </header>
         
         <section class="offer">
             <h2>50% OFF up to ₹100</h2>
-            <p>Use code TASTYTREAT | above ₹159</p>
+            <p>Use code <span class="promo-code">TASTYTREAT</span> | above ₹159</p>
         </section>
-        
-        <nav>
-            <button class="active" data-category="recommended">Recommended for you</button>
+    <div id="nav-container">
+        <nav id="category-nav">
             <button data-category="burgers">Burgers</button>
-            <button data-category="menu">Menu</button>
+            <button data-category="pizza">Pizza</button>
+            <button data-category="pasta">Pasta</button>
+            <button data-category="salads">Salads</button>
+            <button data-category="desserts">Desserts</button>
+            <button data-category="drinks">Drinks</button>
         </nav>
-        
+    </div>
         <main id="menu-items">
             <!-- Menu items will be dynamically added here -->
         </main>
@@ -39,6 +43,7 @@
             <h2>Your Cart</h2>
             <div id="cart-items"></div>
             <div id="cart-total"></div>
+            <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
         </div>
     </div>
     <script src="script.js"></script>
