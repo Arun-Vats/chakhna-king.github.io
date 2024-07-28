@@ -19,33 +19,59 @@
             <h2>50% OFF up to ₹100</h2>
             <p>Use code <span class="promo-code">TASTYTREAT</span> | above ₹159</p>
         </section>
-    <div id="nav-container">
-        <nav id="category-nav">
-            <button data-category="burgers">Burgers</button>
-            <button data-category="pizza">Pizza</button>
-            <button data-category="pasta">Pasta</button>
-            <button data-category="salads">Salads</button>
-            <button data-category="desserts">Desserts</button>
-            <button data-category="drinks">Drinks</button>
-        </nav>
-    </div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search menu items...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div id="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="veg">Vegetarian</button>
+            <button class="filter-btn" data-filter="non-veg">Non-Vegetarian</button>
+        </div>
+
+        <div id="nav-container">
+            <nav id="category-nav">
+                <div class="nav-scroll">
+                    <button data-category="burgers">Burgers</button>
+                    <button data-category="pizza">Pizza</button>
+                    <button data-category="pasta">Pasta</button>
+                    <button data-category="salads">Salads</button>
+                    <button data-category="desserts">Desserts</button>
+                    <button data-category="drinks">Drinks</button>
+                </div>
+            </nav>
+        </div>
+
         <main id="menu-items">
             <!-- Menu items will be dynamically added here -->
         </main>
     </div>
+
     <div id="cart-icon">
         <i class="fas fa-shopping-cart"></i>
         <span id="cart-count">0</span>
     </div>
+
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Your Cart</h2>
             <div id="cart-items"></div>
             <div id="cart-total"></div>
+            <div id="recommendations">
+                <h3>Recommended Items</h3>
+                <div id="recommended-items"></div>
+            </div>
             <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
         </div>
     </div>
+
+    <button id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
